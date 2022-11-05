@@ -1,2 +1,3 @@
 #!/bin/bash
-cp .vimrc ~/.vimrc
+cp NoPlugins/.vimrc ~/.vimrc
+echo "Done."
