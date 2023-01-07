@@ -21,8 +21,6 @@ set tabstop=4
 set noexpandtab
 " Чем собирать программу
 set makeprg=make
-" Цветовая тема
-colorscheme desert
 " Относительный отсчет строк
 set relativenumber
 " Разрешаем использование мыши
@@ -33,6 +31,10 @@ set fileencoding=utf-8
 set nobackup
 " Добавляем отступы снизу и свеху
 set scrolloff=10
+
+" Цветовая тема
+set background=dark
+colorscheme desert
 
 " Создаём горячие клавиши 
 
@@ -66,3 +68,17 @@ nnoremap sd :q<CR>
 
 " BUILD AND RUN FILES
 nnoremap mk. :make<CR>
+
+" NAVIGATION
+
+" Speed navigation with <Shift>
+nnoremap H 3h
+nnoremap J 3j
+nnoremap K 3k
+nnoremap L 3l
+
+" TABS
+nnoremap tt :tabedit<CR>
+nnoremap tn :tabnext<CR>
+nnoremap tp :tabprev<CR>
+
